@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';  // Don't forget to import the Link component if you're using it.
 import contactor from '../../public/contactor.png';
+import galaxy from '../../public/galaxy.png'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
          Make this the copy for your landing Page
         </p>
 
-        <a href="https://www.x.com" rel="noopener noreferrer" className="flex flex-col items-center">
+        <a href="https://www.valueware.ai" rel="noopener noreferrer" className="flex flex-col items-center">
           <Image 
             src={contactor} 
             alt="Another Image" 
@@ -30,6 +31,21 @@ export default function Home() {
             className="h-auto rounded-lg mb-8"
           />
         </a>
+
+        <br />
+
+        <a href="https://www.valueware.ai" rel="noopener noreferrer" className="flex flex-col items-center rounded-lg">
+          <Image 
+            src={galaxy} 
+            alt="Another Image" 
+            width={200} 
+            height={200} 
+            className="h-auto rounded-lg mb-8"
+          />
+        </a>
+
+        <br />
+        
         <Link className="px-4 py-2 text-lg font-medium text-white bg-blue-300 rounded hover:bg-green-400 hover:text-gray-600 transition-colors duration-300 ease-in-out" href="/contact">
           <button>
             Contact Page
